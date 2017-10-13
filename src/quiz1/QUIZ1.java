@@ -13,11 +13,11 @@ public class QUIZ1 {
     
     
     public String reverseString(String word){
-        // change // when word is cut off completely - print out last letter
+        // if the word is less than one in length print out the word
         if (word.length() == 0 || word.length() == 1) {
             return word;
         }else{
-            // 
+            // print out the last letter first and remove it from the word length and repeat it until hte word is backwards
             return word.charAt(word.length() - 1) + reverseString(word.substring(1, word.length() - 1));
         }
     }
